@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Visualising Data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+							<nav style="position: absolute; top: 45px; left: 46.5px;">
+								<ul>
+									<li>
+										<a href="index.html" class="logo">
+											<span class="arrow">&#10550;</span>
+											<span class="title">Home</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+
+							<nav>
+								<ul>
+									<li><a href="#menu">Menu</a></li>
+								</ul>
+							</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="resume-page.html">Resume</a></li>
+							<li class="submenu">								
+								<span class="opener" style="margin-top: 15px; margin-bottom: 15px;">Modules<span class="arrow">&#9662;</span></span>
+								<ul style="font-size: 16px">
+									<li><a href="data-professional.html" style="color: rgb(255, 255, 255); text-decoration: none;">The Data Professional</a></li>
+									<li><a href="big-data.html" style="color: rgb(255, 255, 255); text-decoration: none;">Deciphering Big Data</a></li>
+									<li><a href="numerical-analysis.html" style="color: rgb(255, 255, 255); text-decoration: none;">Numerical Analysis</a></li>
+									<li><a href="visualising-data.html" style="color: rgb(255, 255, 255); text-decoration: none;">Visualising Data</a></li>
+									<li><a href="machine-learning.html" style="color: rgb(255, 255, 255); text-decoration: none;">Machine Learning</a></li>
+									<li><a href="research-methods-professional-practice.html" style="color: rgb(255, 255, 255); text-decoration: none;">Research Methods and Professional Practice</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Visualising Data</h1>
+							<span class="image main"><img src="images/pic07.jpg" alt="" /></span>
+							<p>.</p>
+						</div>
+					</div>
+				</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				var submenu = document.querySelector(".submenu");
+				var subMenuList = submenu.querySelector("ul");			
+				submenu.querySelector(".opener").addEventListener("click", function(event) {
+					event.preventDefault();		
+					if (subMenuList.style.display === "block") {
+						subMenuList.style.display = "none";
+					} else {
+						subMenuList.style.display = "block";
+					}
+				});
+			</script>
+	</body>
+</html>
